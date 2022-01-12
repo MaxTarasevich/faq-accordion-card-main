@@ -14,81 +14,98 @@
   <link rel="stylesheet" href="./output.css">
 
 </head>
-<body >
-  <main>
-    <section class="card">
-      <div class="card__image">
+<body class="bg-gradient-to-t from-soft-blue to-soft-violet bg-no-repeat min-h-screen">
+  <main class="pt-20 pb-20">
+    <section class="card flex rounded-2xl max-w-[918px] m-auto 
+                  bg-light-grayish-blue pr-10">
 
-       <picture>
+      <div 
+      class="card__image relative min-w-[50%]">
+
+        <picture class="absolute top-[180px] left-[-93px]">
+          <img src="./images/illustration-box-desktop.svg" alt="box">
+        </picture>
+<!--
+       <picture class="absolute top-0 left-[-7%]">
          <img src="./images/illustration-woman-online-desktop.svg" alt="woman online">
        </picture>
-      <picture>
-        <img src="./images/illustration-box-desktop.svg" alt="box">
-      </picture>
-    
+      
+       <picture class="absolute bottom-[-10%] left-[-10%] max-w-full">
+         <img src="./images/bg-pattern-desktop.svg" alt="Background">
+       </picture>
+    -->
       </div>
 
-      <div class="card__content">
-        <h1 class="card__title">
+      <div class="card__content w-[50%] pt-10">
+       
+        <h1 class="card__title text-4xl font-bold">
           FAQ
         </h1>
-        <div class="card__accordion">
-          <h2 class="card__subtitle">How many team members can I invite? </h2>
-          <p class="card__text">
-            You can invite up to 2 additional users on the Free plan. 
+
+        <details class="group pt-6 border-b border-solid border-dark-grayish-blue">
+          <summary class="subtitle">
+            <h2 class=" ">
+                      How many team members can I invite?
+            </h2>
+          </summary>
+          <p class="max-h-0 pb-0 overflow-hidden text-dark-grayish-blue
+          transition-[all] duration-700 
+          group-open:max-h-[150px] group-open:pb-6">
+          You can invite up to 2 additional users on the Free plan. 
             There is no limit on team members for the Premium plan. 
           </p>
-        </div>
-        <div class="card__accordion">
-          <h2 class="card__subtitle">What is the maximum file upload size? </h2>
-            <p class="card__text">
-              No more than 2GB. 
-              All files in your account must fit your allotted storage space. 
-            </p>
-        </div>
-        <div class="card__accordion">
-          <h2 class="card__subtitle">How do I reset my password?</h2>
-            <p class="card__text">
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you. 
-            </p>
-        </div>
-        <div class="card__accordion">
-          <h2 class="card__subtitle">Can I cancel my subscription? </h2>
-            <p class="card__text">
-              Yes! Send us a message and we’ll process your request no questions asked. 
-            </p>
-        </div>
-        <div class="card__accordion">
-          <h2 class="card__subtitle">Do you provide additional support?</h2>
-            <p class="card__text">
-              Chat and email support is available 24/7. 
-              Phone lines are open during normal business hours. 
-            </p>
-        </div>
+        </details>
+
+        <details open class="group pt-6 border-b border-solid border-dark-grayish-blue">
+          <summary class="subtitle">
+            <h2>What is the maximum file upload size?</h2>
+          </summary>
+          <p class="max-h-0 pb-0 overflow-hidden text-dark-grayish-blue
+          transition-[all] duration-700 
+          group-open:max-h-[150px] group-open:pb-6">
+          No more than 2GB. 
+          All files in your account must fit your allotted storage space. 
+          </p>
+        </details>
+
+        <details class="group pt-6 border-b border-solid border-dark-grayish-blue">
+          <summary class="subtitle">
+            <h2>How do I reset my password?</h2>
+          </summary>
+          <p class="max-h-0 pb-0 overflow-hidden text-dark-grayish-blue
+          transition-[all] duration-700 
+          group-open:max-h-[150px] group-open:pb-6">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you. 
+          </p>
+        </details>
+
+        <details class="group pt-6 border-b border-solid border-dark-grayish-blue">
+          <summary class="subtitle">
+            <h2>Can I cancel my subscription?</h2>
+          </summary>
+          <p class="max-h-0 pb-0 overflow-hidden text-dark-grayish-blue
+          transition-[all] duration-700 
+          group-open:max-h-[150px] group-open:pb-6">
+          Yes! Send us a message and we’ll process your request no questions asked. 
+          </p>
+        </details>
+        
+        
+        <details class="group pt-6 border-b border-solid border-dark-grayish-blue">
+          <summary class="subtitle">
+            <h2>Do you provide additional support?</h2>
+          </summary>
+          <p class="max-h-0 pb-0 overflow-hidden text-dark-grayish-blue
+          transition-[all] duration-700 
+          group-open:max-h-[150px] group-open:pb-6">
+          Chat and email support is available 24/7. 
+          Phone lines are open during normal business hours. 
+          </p>
+        </details>
+
       </div>
     </section>
   </main>
-
-
-
-
-
-  <!--
-  <h1 class="mb-10">Hello</h1>
-  <input class="peer" type="checkbox" name="checkbox" id="checkbox">
-  <label for="checkbox">Lable</label>
-  <p class="mt-10 bg-slate-700 max-h-0 overflow-hidden transition-[max-height] ease-in-out duration-1000 peer-checked:max-h-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nulla soluta consequatur rem cumque similique eius quae minus est ex nemo, et omnis hic non praesentium, necessitatibus inventore tempore ipsam?</p>
-
-  <input class="peer" type="checkbox" name="checkbox" id="checkbox">
-  <label for="checkbox">Lable</label>
-  <p class="mt-10 bg-slate-700 max-h-0 overflow-hidden transition-[max-height] ease-in-out duration-1000 peer-checked:max-h-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nulla soluta consequatur rem cumque similique eius quae minus est ex nemo, et omnis hic non praesentium, necessitatibus inventore tempore ipsam?</p>
-
-  <div>
-  <input class="peer" type="checkbox" name="checkbox" id="checkbox">
-  <label for="checkbox">Lable</label>
-  <p class="mt-10 bg-slate-700 max-h-0 overflow-hidden transition-[max-height] ease-in-out duration-1000 peer-checked:max-h-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nulla soluta consequatur rem cumque similique eius quae minus est ex nemo, et omnis hic non praesentium, necessitatibus inventore tempore ipsam?</p>
-</div>
--->
 </body>
 </html>

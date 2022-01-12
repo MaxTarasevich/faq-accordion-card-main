@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.subtitle{
+    @apply block pb-6 cursor-pointer group-open:font-bold
+    relative before:block before:absolute before:transition-transform before:duration-700
+                before:top-[0%] before:right-2 before:bg-[url('./images/icon-arrow-down.svg')]
+                before:bg-no-repeat
+                 before:w-4 before:h-4 before:bg-center
+                group-open:before:rotate-180;
+}
+.card__image{
+    background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 40px left -50px, top -290px left -550px;
+    background-size: 472px, 966px;
+}
