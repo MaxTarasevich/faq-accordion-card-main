@@ -14,20 +14,6 @@ module.exports = {
       'body': ['"Kumbh Sans"', 'sans-serif'],
     },
     extend: {
-      keyframes: {       
-         wiggle: {          
-           '0%': { maxHeight: '0px' },          
-           '100%': { maxHeight: '100px' },        
-          }   ,
-          backwiggle:{    
-           '0%': { maxHeight: '100px' }, 
-           '100%': { maxHeight: '0px' }, 
-          }   
-          },
-          animation: {       
-             wiggle: 'wiggle 1s ease-in-out 1 forwards',  
-             backwiggle: 'backwiggle 1s ease-in-out 1 forwards',
-             }
     },
   },
   plugins: [],
