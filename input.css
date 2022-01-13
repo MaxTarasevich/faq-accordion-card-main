@@ -16,3 +16,7 @@
     background-position: top 40px left -50px, top -290px left -550px;
     background-size: 472px, 966px;
 }
+.parag{
+    max-height: 0;
+    transition: all 1s ease-in-out;
+}

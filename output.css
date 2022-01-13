@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Kumbh, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -451,22 +451,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -93px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.left-\[-7\%\] {
-  left: -7%;
-}
-
-.bottom-\[-10\%\] {
-  bottom: -10%;
-}
-
-.left-\[-10\%\] {
-  left: -10%;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -495,8 +479,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 918px;
 }
 
-.max-w-full {
-  max-width: 100%;
+@-webkit-keyframes backwiggle {
+  0% {
+    max-height: 100px;
+  }
+
+  100% {
+    max-height: 0px;
+  }
+}
+
+@keyframes backwiggle {
+  0% {
+    max-height: 100px;
+  }
+
+  100% {
+    max-height: 0px;
+  }
+}
+
+.animate-backwiggle {
+  -webkit-animation: backwiggle 1s ease-in-out 1 forwards;
+          animation: backwiggle 1s ease-in-out 1 forwards;
 }
 
 .overflow-hidden {
@@ -550,12 +555,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .pt-6 {
@@ -564,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.font-body {
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .text-4xl {
@@ -630,8 +647,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: 472px, 966px;
 }
 
+.parag{
+  max-height: 0;
+  transition: all 1s ease-in-out;
+}
+
 .group[open] .group-open\:max-h-\[150px\] {
   max-height: 150px;
+}
+
+.group[open] .group-open\:max-h-\[50px\] {
+  max-height: 50px;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 100px;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 100px;
+  }
+}
+
+.group[open] .group-open\:animate-wiggle {
+  -webkit-animation: wiggle 1s ease-in-out 1 forwards;
+          animation: wiggle 1s ease-in-out 1 forwards;
 }
 
 .group[open] .group-open\:pb-6 {
